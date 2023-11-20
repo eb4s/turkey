@@ -49,11 +49,10 @@ def feather2():
 def feather1():
     draw_feather()
 def feather3():
-    draw_feather()
-    forward(50)
-    draw_feather()
-    forward(50)
-    draw_feather()
+    for i in range(3):
+        draw_feather()
+        forward(50)
+   
     
 def draw_turkey():
     
