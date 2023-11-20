@@ -1,8 +1,8 @@
-
+speed(0)
 penup()
 left(90)
 setpos(0,-200)
-speed(0)
+
 
 
 
@@ -37,6 +37,24 @@ def draw_feather():
     forward(50)
     backward(50)
 
+
+
+
+def feather2():
+    draw_feather()
+    right(90)
+    draw_feather()
+    left(180)
+    draw_feather()
+def feather1():
+    draw_feather()
+def feather3():
+    draw_feather()
+    forward(50)
+    draw_feather()
+    forward(50)
+    draw_feather()
+    
 def draw_turkey():
     
     #make body
@@ -119,5 +137,13 @@ left(90)
 
 
 feather_color = input("what color would you like your feather?")
-draw_feather()
+feather_pattern = input("what pattern would you like your feathers?, onehair, cross, long:")
+
+if feather_pattern == "onehair":
+    feather1()
+if feather_pattern == "cross":
+    feather2()
+if feather_pattern == "long":
+    feather3()
+
 
